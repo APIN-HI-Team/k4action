@@ -32,11 +32,13 @@ class HomeController extends Controller
     {
         $students = TreatmentCurrent::select("sex as sex", \DB::raw("COUNT('pepid') as count"))
             ->where('CurrentARTStatus_Pharmacy','=','Active')
+            ->where('Outcomes',NULL)
             ->groupBy('sex')
             ->get();
 
         $studentsNew = TreatmentCurrent::select("sex as sex", \DB::raw("COUNT('pepid') as count"))
             ->where('CurrentARTStatus_Pharmacy','=','Active')
+            ->where('Outcomes',NULL)
             ->where('TI','!=','Yes')
             ->wherebetween('ARTStartDate',['2021-10-01','2022-09-30'])
             ->groupBy('sex')
@@ -50,6 +52,7 @@ class HomeController extends Controller
                WHEN current_age >= 25 THEN '25 +'
                END) as age_range,COUNT(pepid) AS count"))
             ->where('CurrentArtStatus_Pharmacy','=','Active')
+            ->where('Outcomes',NULL)
             ->groupBy('age_range')
         ->get();
 
@@ -62,6 +65,7 @@ class HomeController extends Controller
                END) as age_range,COUNT(pepid) AS count"))
             ->where('CurrentArtStatus_Pharmacy','=','Active')
             ->where('TI','!=','Yes')
+            ->where('Outcomes',NULL)
             ->wherebetween('ARTStartDate',['2021-10-01','2022-09-30'])
             ->groupBy('age_range')
             ->get();
