@@ -1,0 +1,126 @@
+.flex-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid #edf2f9;
+    border-radius: .375rem;
+    box-shadow: 0px 1px 2px 0px rgba(82, 63, 105, 0.3); }
+.card .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem; }
+.card .card-body:last-child {
+    border-bottom-left-radius: .375rem;
+    border-bottom-right-radius: .375rem; }
+
+.logo-holder {
+    text-align: center; }
+
+.login-logo {
+    width: 240px; }
+
+label {
+    font-size: .83333rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: #5e6e82; }
+
+.opacity-75 {
+    opacity: 0.75; }
+
+h3 {
+    color: #344050;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2; }
+
+body {
+    line-height: 1.5; }
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+.form-group {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #5e6e82; }
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .625rem + 2px);
+    padding: .3125rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d8e2ef;
+    border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; }
+.form-group .fs--1 {
+    font-size: .83333rem; }
+
+.bg-holder {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    overflow: hidden;
+    will-change: transform,opacity,filter;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-position: 0 133%;
+    background-image: url(../img/half-circle.png);
+    opacity: 0.4; }
+
+.bg-card-gradient {
+    background-image: -o-linear-gradient(135deg, #437cd2, #042465);
+    background-image: linear-gradient(-45deg, #04273e, #042865);
+    background-position: center; }
+
+.z-index-1 {
+    z-index: 1; }
+
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0; }
+
+.custom-control-label {
+    line-height: 1.6rem; }
+
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top; }
