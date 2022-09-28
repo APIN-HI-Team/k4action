@@ -9,6 +9,20 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- third party css -->
+    <link href="assets/css/vendor_plugin/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+    <link href=" https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css" rel="stylesheet"
+          type="text/css" />
+    <link href="https://cdn.datatables.net/fixedheader/3.1.8/css/fixedHeader.bootstrap.min.css" rel="stylesheet"
+          type="text/css" />
+    <link href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap.min.css" rel="stylesheet"
+          type="text/css" />
+    <link href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css" rel="stylesheet"
+          type="text/css" />
+    <!-- third party css end -->
+
+
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>

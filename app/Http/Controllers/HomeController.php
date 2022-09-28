@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\TreatmentCurrent;
+use App\Helpers\Scripts;
+use App\Models\TreatmentPerformance;
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -23,12 +25,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    /*public function index(): \Illuminate\Contracts\Support\Renderable
     {
         return view('home');
-    }
+    }*/
 
-    public function count()
+    public function index(): \Illuminate\Contracts\Support\Renderable
     {
         $students = TreatmentCurrent::select("sex as sex", \DB::raw("COUNT('pepid') as count"))
             ->where('CurrentARTStatus_Pharmacy','=','Active')
@@ -68,11 +70,23 @@ class HomeController extends Controller
             ->where('Outcomes',NULL)
             ->wherebetween('ARTStartDate',['2021-10-01','2022-09-30'])
             ->groupBy('age_range')
+            ->get();/*public function getPerformance(){
+        $performance = TreatmentPerformance::all();
+        return view('home',compact('performance'));
+    }*/
+
+        $performance = DB::table('treatment_report')
+            ->select(DB::raw("*"))
+            ->orderBy('state', 'asc')
+            ->orderBy('lga', 'asc')
+            ->orderBy('facility_name', 'asc')
             ->get();
 
 
-        return view('home', compact('students','txcurrAge','studentsNew','txnewAge'));
+        return view('home', compact('students','txcurrAge','studentsNew','txnewAge','performance'));
         //dd($data);
         //dd(json_encode($data));
     }
+
+
 }

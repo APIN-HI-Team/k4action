@@ -3,8 +3,8 @@
 namespace App\Helpers;
 
 use App\Models\VLPerformance;
-use App\HTSPerformance;
-use App\TreatmentPerformance;
+use App\Models\HTSPerformance;
+use App\Models\TreatmentPerformance;
 use Illuminate\Support\Facades\DB;
 
 class Scripts
@@ -59,6 +59,14 @@ class Scripts
         ];
 
         return (!empty($result)) ?  $result : [];
+    }
+
+    public static function summaryList(): \Illuminate\Support\Collection
+    {
+        $statsql = "*";
+        $list = DB::table('treatment_report')->select(DB::raw($statsql))->get();
+        return $list;
+
     }
 
 }

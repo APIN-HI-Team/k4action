@@ -1,0 +1,58 @@
+
+    .bg-dark-wiget {
+        background-color: #1c1f24 !important;
+    }
+
+    .btn-outline-primary {
+        color: #1c1f24 !important;
+        border-color: #1c1f24 !important;
+    }
+
+    .btn-outline-primary:hover{
+        color:#fff  !important;
+        background-color:#1c1f24  !important;
+        border-color:#1c1f24  !important;
+    }
+
+    .bg-green-wiget {
+        background: rgb(78, 97, 28);
+    }
+
+    .bg-brown-wiget {
+        background:  rgb(211, 128, 76);
+    }
+
+
+   
+
+    .text-muted-white {
+        color: #eee !important;
+    }
+
+    .text-muted-dark {
+        color: #2d3034 !important;
+    }
+
+    .bg-info-widget {
+        background-color: #112930 !important;
+    }
+
+    .bg-primary-widget {
+        background-color: #113364 !important;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #112930 !important;
+    }
+
+    .nav-pills>li>a,
+    .nav-tabs>li>a {
+        color: #313a46;
+        font-weight: 600;
+    }
+
+    .topnav-navbar-dark {
+        background-color: #082f3f !important;
+    }

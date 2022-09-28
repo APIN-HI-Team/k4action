@@ -11374,7 +11374,7 @@ span.select2-selection--multiple {
     margin-left: -25px;
 }
 
-.table > thead:first-child > tr:first-child > th:first-child {
+/*.table > thead:first-child > tr:first-child > th:first-child {
     padding-left: 50px;
 }
 .table > thead:last-child > tr:last-child > th:last-child {
@@ -11389,35 +11389,9 @@ span.select2-selection--multiple {
 .table > tbody > tr.selected {
     background-color: #4E611C;
     color: white;
-}
+}*/
 
-/* Begin Data Tables*/
-.dataTables_filter {
-    float: left !important;
-    margin-left: 30px;
-    margin-bottom: 15px;
-}
-.dataTables_filter label {
-    opacity: 0.7;
-}
-.dataTables_filter label input {
-    border-radius: 3px;
-    border-width: 1px;
-    min-width: 280px;
-    padding: 6px;
-}
 
-.dataTables_info {
-    padding-left: 30px;
-}
-
-.dataTables_paginate.paging_simple_numbers {
-    padding-right: 30px;
-}
-
-.dataTables_wrapper {
-    width: 100%;
-}
 
 /* End Data Tables*/
 .dropzone {
@@ -11499,6 +11473,39 @@ span.select2-selection--multiple {
 }
 .doc-wrapper .wrapper-content h5 {
     margin-bottom: 30px;
+}
+
+.datatables{
+    width: 100% !important;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dt-buttons {
+    margin-bottom:0.333rem;
+    margin-top:0.2rem;
+}
+
+.dataTables_filter{
+    margin-right: .2rem;
+}
+
+.dt-buttons .btn {
+    margin-left: 0.333em;
+    border-radius: 0;
+}
+
+.table.datatable {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    border-bottom: 2px solid #c8ced3;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 1px solid #c8ced3;
 }
 
 /*# sourceMappingURL=site.css.map */

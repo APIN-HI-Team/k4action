@@ -20,6 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home',  'App\Http\Controllers\HomeController@count');
 
 Route::get('/analytics/monitoring', [App\Http\Controllers\MonitoringController::class, 'index'])->name('monitoring');
