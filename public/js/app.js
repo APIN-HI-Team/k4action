@@ -5255,6 +5255,95 @@ module.exports = {
 /*!***********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
   \***********************************************************************************************************************************************************************************************************************/
+/***/ (() => {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TxNewComponent.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TxNewComponent.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5278,10 +5367,206 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
+  name: "TxNewComponent"
 });
 
 /***/ }),
@@ -5311,6 +5596,7 @@ window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
+Vue.component('tx-component', (__webpack_require__(/*! ./components/TxNewComponent.vue */ "./resources/js/components/TxNewComponent.vue")["default"]));
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -27818,6 +28104,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
 /* harmony import */ var _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -27844,6 +28133,45 @@ component.options.__file = "resources/js/components/ExampleComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/TxNewComponent.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/TxNewComponent.vue ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _TxNewComponent_vue_vue_type_template_id_6c6892e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true& */ "./resources/js/components/TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true&");
+/* harmony import */ var _TxNewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TxNewComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/TxNewComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TxNewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TxNewComponent_vue_vue_type_template_id_6c6892e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _TxNewComponent_vue_vue_type_template_id_6c6892e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "6c6892e8",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/TxNewComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -27856,7 +28184,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ExampleComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default())); 
+
+/***/ }),
+
+/***/ "./resources/js/components/TxNewComponent.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/TxNewComponent.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TxNewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TxNewComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TxNewComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TxNewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -27877,6 +28225,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true& ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TxNewComponent_vue_vue_type_template_id_6c6892e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TxNewComponent_vue_vue_type_template_id_6c6892e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TxNewComponent_vue_vue_type_template_id_6c6892e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true&");
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
@@ -27893,28 +28258,828 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { attrs: { id: "content" } }, [
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value:
+              new Array(
+                "cummulative_summary",
+                "linkage_retention",
+                "cdc_fact_sheet"
+              ).indexOf(_vm.selectedIndicator) == -1,
+            expression:
+              "new Array('cummulative_summary','linkage_retention','cdc_fact_sheet').indexOf(selectedIndicator) == -1",
+          },
+        ],
+        staticClass: "centered-heading",
+      },
+      [_vm._m(0)]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value:
+              new Array(
+                "tx_new",
+                "hts_tst",
+                "hts_index",
+                "hts_recent",
+                "case_finding",
+                "cummulative_summary",
+                "linkage_retention",
+                "cdc_fact_sheet",
+                ""
+              ).indexOf(_vm.selectedIndicator) == -1,
+            expression:
+              "new Array('tx_new', 'hts_tst', 'hts_index', 'hts_recent','case_finding','cummulative_summary','linkage_retention','cdc_fact_sheet', '').indexOf(selectedIndicator) == -1",
+          },
+        ],
+        staticClass: "centered-heading",
+      },
+      [_vm._v("\n        Charts shown here use numbers as of today\n    ")]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [_c("tx-component")], 1),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component"),
+    return _c("div", { staticClass: "row tile-row" }, [
+      _c("div", { staticClass: "col mr-2" }, [
+        _c("div", { staticClass: "widget" }, [
+          _c("div", { staticClass: "widget-content with-shadow" }, [
+            _c("div", { staticClass: "widget-icon" }, [
+              _c("i", { staticClass: "flaticon2-avatar purple" }),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
+            _c("div", { staticClass: "widget-block" }, [
+              _c("h4", { staticClass: "widget-title purple" }, [
+                _vm._v(
+                  "\n                                Patients\n                            "
+                ),
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  staticClass: "widget-stat purple",
+                  attrs: { id: "ribbon-patients" },
+                },
+                [
+                  _vm._v(
+                    "\n                                ...\n                            "
+                  ),
+                ]
               ),
             ]),
           ]),
         ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col mr-2" }, [
+        _c("div", { staticClass: "widget" }, [
+          _c("div", { staticClass: "widget-content with-shadow" }, [
+            _c("div", { staticClass: "widget-icon" }, [
+              _c("i", { staticClass: "flaticon2-box orange" }),
+            ]),
+            _vm._v(" "),
+            _c("h4", { staticClass: "widget-title orange" }, [
+              _vm._v(
+                "\n                            Facilities\n                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass: "widget-stat orange",
+                attrs: { id: "ribbon-facilities" },
+              },
+              [
+                _vm._v(
+                  "\n                            ...\n                        "
+                ),
+              ]
+            ),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col mr-2" }, [
+        _c("div", { staticClass: "widget" }, [
+          _c("div", { staticClass: "widget-content with-shadow" }, [
+            _c("div", { staticClass: "widget-icon" }, [
+              _c("i", { staticClass: "flaticon2-map teal" }),
+            ]),
+            _vm._v(" "),
+            _c("h4", { staticClass: "widget-title teal" }, [
+              _vm._v(
+                "\n                            States\n                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass: "widget-stat teal",
+                attrs: { id: "ribbon-states" },
+              },
+              [
+                _vm._v(
+                  "\n                            ...\n                        "
+                ),
+              ]
+            ),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col mr-2" }, [
+        _c("div", { staticClass: "widget" }, [
+          _c("div", { staticClass: "widget-content with-shadow" }, [
+            _c("div", { staticClass: "widget-icon" }, [
+              _c("i", { staticClass: "flaticon2-group yellow" }),
+            ]),
+            _vm._v(" "),
+            _c("h4", { staticClass: "widget-title yellow" }, [
+              _vm._v(
+                "\n                            IP\n                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass: "widget-stat yellow",
+                attrs: { id: "ribbon-ips" },
+              },
+              [
+                _vm._v(
+                  "\n                            ...\n                        "
+                ),
+              ]
+            ),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TxNewComponent.vue?vue&type=template&id=6c6892e8&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.selectedIndicator == "tx_new"
+    ? _c("div", { staticClass: "tx_new full-width" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _vm._m(5),
+      ])
+    : _vm._e()
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "line" }, [
+      _c("div", { staticClass: "col-xl-6" }, [
+        _c(
+          "div",
+          { staticClass: "box white-background with-shadow extra-padding" },
+          [
+            _c("div", { staticClass: "box-heading" }, [
+              _vm._v(
+                "\n                    Patients Newly Enrolled on ART by Sex\n\n                    "
+              ),
+              _c("div", { staticClass: "box-heading-toolbar dropdown" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-sm dropdown-toggle",
+                    attrs: { href: "#", "data-toggle": "dropdown" },
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Export\n                        "
+                    ),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadCsv('sexChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-sheet" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download CSV")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPng('sexChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-image-file" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PNG")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPdf('sexChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-paper" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PDF")]),
+                      ]
+                    ),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "box-content" }, [
+              _c("div", { staticClass: "chart", attrs: { id: "sexChart" } }),
+            ]),
+          ]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xl-6" }, [
+        _c(
+          "div",
+          { staticClass: "box white-background with-shadow extra-padding" },
+          [
+            _c("div", { staticClass: "box-heading" }, [
+              _vm._v(
+                "\n                    Patients Newly Enrolled on ART by Age Group\n\n                    "
+              ),
+              _c("div", { staticClass: "box-heading-toolbar dropdown" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-sm dropdown-toggle",
+                    attrs: { href: "#", "data-toggle": "dropdown" },
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Export\n                        "
+                    ),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadCsv('ageChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-sheet" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download CSV")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPng('ageChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-image-file" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PNG")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPdf('ageChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-paper" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PDF")]),
+                      ]
+                    ),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "box-content" }, [
+              _c("div", { staticClass: "chart", attrs: { id: "ageChart" } }),
+            ]),
+          ]
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "line" }, [
+      _c("div", { staticClass: "col-xl-12" }, [
+        _c(
+          "div",
+          { staticClass: "box white-background with-shadow extra-padding" },
+          [
+            _c("div", { staticClass: "box-heading" }, [
+              _vm._v(
+                "\n                    Patients Newly Enrolled on ART by Sex and Age Group\n\n                    "
+              ),
+              _c("div", { staticClass: "box-heading-toolbar dropdown" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-sm dropdown-toggle",
+                    attrs: { href: "#", "data-toggle": "dropdown" },
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Export\n                        "
+                    ),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadCsv('ageSexChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-sheet" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download CSV")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPng('ageSexChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-image-file" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PNG")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPdf('ageSexChart')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-paper" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PDF")]),
+                      ]
+                    ),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "box-content" }, [
+              _c("div", { staticClass: "chart", attrs: { id: "ageSexChart" } }),
+            ]),
+          ]
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "line" }, [
+      _c("div", { staticClass: "col-xl-12" }, [
+        _c(
+          "div",
+          { staticClass: "box white-background with-shadow extra-padding" },
+          [
+            _c("div", { staticClass: "box-heading" }, [
+              _vm._v(
+                "\n                    Distribution of Patients Newly Enrolled on ART by location in the last 12 Months\n\n                    "
+              ),
+              _c("div", { staticClass: "box-heading-toolbar dropdown" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-sm dropdown-toggle",
+                    attrs: { href: "#", "data-toggle": "dropdown" },
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Export\n                        "
+                    ),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadCsv('distributionMap')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-sheet" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download CSV")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPng('distributionMap')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-image-file" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PNG")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPdf('distributionMap')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-paper" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PDF")]),
+                      ]
+                    ),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "box-content" }, [
+              _c(
+                "div",
+                {
+                  staticStyle: { float: "right", display: "none" },
+                  attrs: { id: "northImage" },
+                },
+                [
+                  _c("img", {
+                    staticStyle: { height: "50px", width: "50px" },
+                    attrs: {
+                      alt: "north arrow",
+                      src: "/img/map/North Arrow.PNG",
+                    },
+                  }),
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "chart",
+                attrs: { id: "distributionMap" },
+              }),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticStyle: { float: "left", display: "none" },
+                  attrs: { id: "scaleImage" },
+                },
+                [
+                  _c("img", {
+                    attrs: { alt: "scale", src: "/img/map/Scale.PNG" },
+                  }),
+                ]
+              ),
+            ]),
+          ]
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "line" }, [
+      _c("div", { staticClass: "col-xl-12" }, [
+        _c(
+          "div",
+          { staticClass: "box white-background with-shadow extra-padding" },
+          [
+            _c("div", { staticClass: "box-content" }, [
+              _c("div", {
+                staticClass: "chart",
+                attrs: { id: "distributionMapDetails" },
+              }),
+            ]),
+          ]
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "line" }, [
+      _c("div", { staticClass: "col-xl-12" }, [
+        _c(
+          "div",
+          { staticClass: "box white-background with-shadow extra-padding" },
+          [
+            _c("div", { staticClass: "box-heading" }, [
+              _vm._v(
+                "\n                    Patients Newly Enrolled on ART by location\n\n                    "
+              ),
+              _c("div", { staticClass: "box-heading-toolbar dropdown" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-sm dropdown-toggle",
+                    attrs: { href: "#", "data-toggle": "dropdown" },
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Export\n                        "
+                    ),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadCsv('drilldownBar')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-sheet" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download CSV")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPng('drilldownBar')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-image-file" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PNG")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPdf('drilldownBar')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-paper" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PDF")]),
+                      ]
+                    ),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "box-content" }, [
+              _c("div", {
+                staticClass: "chart",
+                attrs: { id: "drilldownBar" },
+              }),
+            ]),
+          ]
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "line" }, [
+      _c("div", { staticClass: "col-xl-12" }, [
+        _c(
+          "div",
+          { staticClass: "box white-background with-shadow extra-padding" },
+          [
+            _c("div", { staticClass: "box-heading" }, [
+              _vm._v(
+                "\n                    ART Initiation trend over the last 12 Months\n\n                    "
+              ),
+              _c("div", { staticClass: "box-heading-toolbar dropdown" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-sm dropdown-toggle",
+                    attrs: { href: "#", "data-toggle": "dropdown" },
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Export\n                        "
+                    ),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadCsv('initiationTrend')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-sheet" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download CSV")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPng('initiationTrend')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-image-file" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PNG")]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "#",
+                          onclick: "downloadPdf('initiationTrend')",
+                        },
+                      },
+                      [
+                        _c("i", { staticClass: "flaticon2-paper" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download PDF")]),
+                      ]
+                    ),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "box-content" }, [
+              _c("div", {
+                staticClass: "chart",
+                attrs: { id: "initiationTrend" },
+              }),
+            ]),
+          ]
+        ),
       ]),
     ])
   },
@@ -40155,6 +41320,18 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\wamp64\\\\www\\\\k
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
 /******/ 		};
 /******/ 	})();
 /******/ 	

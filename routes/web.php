@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/analytics/monitoring', [App\Http\Controllers\MonitoringController::class, 'index'])->name('monitoring');
+Route::get('/monitoring', [App\Http\Controllers\MonitoringController::class, 'index'])->name('treatment');

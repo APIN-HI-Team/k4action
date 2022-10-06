@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\TreatmentCurrent;
-use App\Helpers\Scripts;
+use App\Helpers\Scripts as Helper;
 use App\Models\TreatmentPerformance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;

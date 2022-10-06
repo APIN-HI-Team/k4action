@@ -1,9 +1,9 @@
-<div class="row">
-    <div class="tx_new full-width">
+<template>
+    <div class="tx_new full-width" v-if="selectedIndicator == 'tx_new'">
         <div class="line">
             <div class="col-xl-6">
                 <div class="box white-background with-shadow extra-padding">
-                    <div class="box-heading tx_facilites">
+                    <div class="box-heading">
                         Patients Newly Enrolled on ART by Sex
 
                         <div class="box-heading-toolbar dropdown">
@@ -63,6 +63,7 @@
                 </div>
             </div>
         </div>
+
         <div class="line">
             <div class="col-xl-12">
                 <div class="box white-background with-shadow extra-padding">
@@ -95,6 +96,7 @@
                 </div>
             </div>
         </div>
+
         <div class="line">
             <div class="col-xl-12">
                 <div class="box white-background with-shadow extra-padding">
@@ -126,9 +128,11 @@
                         <div class="chart" id="distributionMap"></div>
                         <div id="scaleImage" style="float: left; display: none;"><img alt="scale" src="/img/map/Scale.PNG" /></div>
                     </div>
+
                 </div>
             </div>
         </div>
+
         <div class="line">
             <div class="col-xl-12">
                 <div class="box white-background with-shadow extra-padding">
@@ -138,6 +142,7 @@
                 </div>
             </div>
         </div>
+
         <div class="line">
             <div class="col-xl-12">
                 <div class="box white-background with-shadow extra-padding">
@@ -170,6 +175,7 @@
                 </div>
             </div>
         </div>
+
         <div class="line">
             <div class="col-xl-12">
                 <div class="box white-background with-shadow extra-padding">
@@ -202,5 +208,16 @@
                 </div>
             </div>
         </div>
+
     </div>
-</div>
+</template>
+
+<script>
+export default {
+    name: "TxNewComponent"
+}
+</script>
+
+<style scoped>
+
+</style>

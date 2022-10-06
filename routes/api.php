@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Helpers\Scripts as Helper;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\View;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,8 @@ Route::post('/treatment-filter', function (Request $request) {
         return Helper::treamentPerformance($request,$request->report_type);
     }
 })->name('treatment.filter');
+
+
+Route::get('/get-widget/{id}', function($page){
+    return View::make('report.'.$page);
+});
