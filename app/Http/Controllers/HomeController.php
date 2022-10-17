@@ -88,5 +88,16 @@ class HomeController extends Controller
         //dd(json_encode($data));
     }
 
+    public function showPerformance(Request $request): \Illuminate\Http\JsonResponse
+    {
+        $performance = DB::table('treatment_report')
+            ->select(DB::raw("*"))
+            ->orderBy('state', 'asc')
+            ->orderBy('lga', 'asc')
+            ->orderBy('facility_name', 'asc')
+            ->get();
+        return response()->json(['performance'=>$performance]);
+    }
+
 
 }

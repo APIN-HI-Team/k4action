@@ -175,14 +175,13 @@
                         </p>
                         <div class="tab-content">
                             <div class="tab-pane show active" id="buttons-table-preview">
-                                <table class="myTables table table-xl table-striped dt-responsive nowrap w-100">
+                                <table class="myTables table table-xl table-striped dt-responsive nowrap w-100" id="emr-table">
                                     <thead>
                                     <tr>
                                         <th>State</th>
                                         <th>LGA</th>
                                         <th>Facility Name</th>
                                         <th>Datim code</th>
-                                        <th>Total Patients</th>
                                         <th>TX CURR</th>
                                         <th>IIT</th>
                                         <th>Transferred Out</th>
@@ -201,7 +200,6 @@
                                             <td>{{$list->lga}}</td>
                                             <td>{{$list->facility_name}}</td>
                                             <td>{{$list->datim_code}}</td>
-                                            <td>{{$list->total_patients}}</td>
                                             <td>{{$list->active}}</td>
                                             <td>{{$list->ltfu}}</td>
                                             <td>{{$list->transferred_out}}</td>
@@ -225,11 +223,6 @@
     </div>
 
 
-
-    <div class="loading hide">
-        <img src="/img/loader.gif" alt="" />
-        Fetching Data ...
-    </div>
 @endsection
 
 @section('footer_scripts')
@@ -258,6 +251,40 @@
         });
 
         new $.fn.dataTable.FixedHeader(table);
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#emr-table').DataTable({
+                "processing":true,
+                "serverside":true,
+                "ajax": {
+                    "url": "{{route('performance')}}",
+                    "type": "POST",
+                    "dataType": "json",
+                    "data": {"_token":"{{csrf_token() }}"}
+                },
+                "columns":[
+                    {"data":"state","orderable":false},
+                    {"data":"lga","orderable":false},
+                    {"data":"facility_name","orderable":false},
+                    {"data":"datim_code","orderable":false},
+                    {"data":"tx_curr","orderable":false},
+                    {"data":"iit","orderable":false},
+                    {"data":"transferred_out","orderable":false},
+                    {"data":"dead","orderable":false},
+                    {"data":"stopped","orderable":false},
+                    {"data":"pbs","orderable":false},
+                    {"data":"tx_new","orderable":false},
+                    {"data":"emr_date","orderable":false},
+                ],
+                language:{
+                    processing: '<img src="/img/loader.gif" alt="" />'
+                },
+                columnDefs: [
+                    {"orderable":false, "targets":0}
+                ]
+            });
+        });
     </script>
     @include('dashboardscripts.scripts')
 @endsection
