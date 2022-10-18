@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\AppointmentHistoryLog;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Console\Command;
@@ -45,6 +46,8 @@ class SMSWeek extends Command
 
         foreach ($appointment as $key => $value){
             $ids[$key]['id'] = $value->id;
+            $ids[$key]['State'] = $value->state;
+            $ids[$key]['LGA'] = $value->lga;
             $ids[$key]['Datim_Code'] = $value->datim_code;
             $ids[$key]['status'] = 1;
             $sent[$key]['PepId'] = $value->pepid;
@@ -72,6 +75,15 @@ class SMSWeek extends Command
             DB::table('next_day_appointments')
                 ->where('id',$id)
                 ->update(['status' => 1]);
+
+            $appointmentHistoryLog = new AppointmentHistoryLog();
+            $appointmentHistoryLog->state = $id['State'];
+            $appointmentHistoryLog->lga = $id['LGA'];
+            $appointmentHistoryLog->datim_code = $id['Datim_Code'];
+            $appointmentHistoryLog->pepid = $sent[$key]['PepID'];
+            $appointmentHistoryLog->phone_no = $sent[$key]['PhoneNUmber'];
+            $appointmentHistoryLog->status = 1;
+            $appointmentHistoryLog->save();
         }
 
         return $res;
