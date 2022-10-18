@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 use App\Helpers\Scripts as Helper;
 use Illuminate\Support\Facades\DB;
@@ -38,7 +39,9 @@ Route::get('/get-widget/{id}', function($page){
 Route::get('/sendSMS', function(Request $request){
     $appointment = DB::table('next_day_appointments')
         ->where(['status'=>0])
+        ->whereBetween('next_appointment', [Carbon::today()->toDate(), Carbon::today()->addDays(2)->toDate()])
         ->whereNotNull('phone_no')->get();
+
 
     $sent = [];
     $res = "";
