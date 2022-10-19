@@ -113,12 +113,12 @@ Route::get('/getLogs', function(Request $request){
 
     foreach($formattedResult->Data as $data){
         $phoneNumber = str_replace("234", "0",$data->PhoneNumber);
-        $timestamp = preg_replace( '/[^0-9]/', '', $data->MessageDate);
-        $date = date("Y-m-d H:i:s", $timestamp / 1000);
+        /*$timestamp = preg_replace( '/[^0-9]/', '', $data->MessageDate);
+        $date = date("Y-m-d H:i:s", $timestamp / 1000);*/
         if(strlen($phoneNumber) == 11){
             DB::table('appointments_logs')
                 ->where('phone_no',$phoneNumber)
-                ->where('created_at',$date)
+                /*->where('created_at',$date)*/
                 ->update(['status' => "Delivered"]);
         }
     }
