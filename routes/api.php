@@ -41,7 +41,7 @@ Route::get('/get-widget/{id}', function($page){
 Route::get('/sendSMS', function(Request $request){
     $appointment = DB::table('next_day_appointments')
         ->where(['status'=>0])
-        ->whereBetween('next_appointment', [Carbon::today()->toDate(), Carbon::today()->addDays(2)->toDate()])
+        ->where('next_appointment', Carbon::today()->addDays(2)->toDate())
         ->whereNotNull('phone_no')->get();
 
 
@@ -108,11 +108,13 @@ Route::get('/getLogs', function(Request $request){
 
     $response = $client->get('https://pbs.apin.org.ng/Integration/MessageDeliveryRequest/GetLog', $params);
     $res = $response->getBody()->getContents();
-    $formattedResult = json_decode($res,true);
-    dd($formattedResult);
-    /*foreach($formattedResult->Data as $data){
+    $formattedResult = json_decode($res);
+    /*dd($formattedResult);*/
+
+    foreach($formattedResult->Data as $data){
         $phoneNumber = str_replace("234", "0",$data->PhoneNumber);
-        $date = new DateTime($data->MessageDate);
+        $timestamp = preg_replace( '/[^0-9]/', '', $data->MessageDate);
+        $date = date("Y-m-d H:i:s", $timestamp / 1000);
         if(strlen($phoneNumber) == 11){
             DB::table('appointments_logs')
                 ->where('phone_no',$phoneNumber)
@@ -120,5 +122,5 @@ Route::get('/getLogs', function(Request $request){
                 ->update(['status' => "Delivered"]);
         }
     }
-    return "success";*/
+    return "success";
 })->name('getLogs');

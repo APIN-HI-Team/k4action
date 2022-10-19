@@ -36,7 +36,7 @@ class SMSDay extends Command
     {
         $appointment = DB::table('next_day_appointments')
             ->where(['status'=>0])
-            ->whereBetween('next_appointment', [Carbon::today()->toDate(), Carbon::today()->addDays(2)->toDate()])
+            ->where('next_appointment', Carbon::today()->addDays(2)->toDate())
             ->whereNotNull('phone_no')->get();
 
 
