@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\AppointmentHistoryLog;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
@@ -49,6 +51,8 @@ Route::get('/sendSMS', function(Request $request){
 
     foreach ($appointment as $key => $value){
         $ids[$key]['id'] = $value->id;
+        $ids[$key]['State'] = $value->state;
+        $ids[$key]['LGA'] = $value->lga;
         $ids[$key]['Datim_Code'] = $value->datim_code;
         $ids[$key]['status'] = 1;
         $sent[$key]['PepId'] = $value->pepid;
@@ -76,8 +80,45 @@ Route::get('/sendSMS', function(Request $request){
         DB::table('next_day_appointments')
             ->where('id',$id)
             ->update(['status' => 1]);
+
+        $appointmentHistoryLog = new AppointmentHistoryLog;
+        $appointmentHistoryLog->state = $id['State'];
+        $appointmentHistoryLog->lga = $id['LGA'];
+        $appointmentHistoryLog->datim_code = $id['Datim_Code'];
+        $appointmentHistoryLog->pepid = $sent[$key]['PepId'];
+        $appointmentHistoryLog->phone_no = $sent[$key]['PhoneNumber'];
+        $appointmentHistoryLog->status = 1;
+        $appointmentHistoryLog->save();
     }
 
     return $res;
     /*dd(json_encode($res,JSON_UNESCAPED_SLASHES));**/
 })->name('appointments');
+
+Route::get('/getLogs', function(Request $request){
+    $params = [
+        'query' => [
+            'startRange' => "202210010000",
+            'endRange' => "202210191200",
+        ]
+    ];
+    $client = new Client([
+        'verify' => base_path('public/cacert.pem')
+    ]);
+
+    $response = $client->get('https://pbs.apin.org.ng/Integration/MessageDeliveryRequest/GetLog', $params);
+    $res = $response->getBody()->getContents();
+    $formattedResult = json_decode($res,true);
+    dd($formattedResult);
+    /*foreach($formattedResult->Data as $data){
+        $phoneNumber = str_replace("234", "0",$data->PhoneNumber);
+        $date = new DateTime($data->MessageDate);
+        if(strlen($phoneNumber) == 11){
+            DB::table('appointments_logs')
+                ->where('phone_no',$phoneNumber)
+                ->where('created_at',$date)
+                ->update(['status' => "Delivered"]);
+        }
+    }
+    return "success";*/
+})->name('getLogs');

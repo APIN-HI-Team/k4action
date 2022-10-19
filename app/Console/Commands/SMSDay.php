@@ -80,8 +80,8 @@ class SMSDay extends Command
             $appointmentHistoryLog->state = $id['State'];
             $appointmentHistoryLog->lga = $id['LGA'];
             $appointmentHistoryLog->datim_code = $id['Datim_Code'];
-            $appointmentHistoryLog->pepid = $sent[$key]['PepID'];
-            $appointmentHistoryLog->phone_no = $sent[$key]['PhoneNUmber'];
+            $appointmentHistoryLog->pepid = $sent[$key]['PepId'];
+            $appointmentHistoryLog->phone_no = $sent[$key]['PhoneNumber'];
             $appointmentHistoryLog->status = 1;
             $appointmentHistoryLog->save();
         }
